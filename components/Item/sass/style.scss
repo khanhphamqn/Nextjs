@@ -1,0 +1,57 @@
+@import '../../../sass/variables';
+
+.thumb-outer{
+	padding: 6px 6px 17px 6px;
+	margin-bottom: 30px;
+	background: #ffffff;
+	-webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+	text-align: center;
+	.box_inner{
+		position: relative;
+		img {
+			width: 100%;
+		}
+	}
+	hr {
+		width:27px;
+	}
+	strong {
+		position: absolute;
+		z-index: 1;
+		display: inline-block;
+		top: -20px;
+		right: -2px;
+		padding-top: 16px;
+		width: 49px;
+		height: 49px;
+		background: $main-bg-color;
+		border-radius: 49px;
+		text-align: center;
+		font: 12px 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+	.thumbnail {
+		border: none;
+		border-radius: 0;
+		.caption {
+			a {
+				font: 300 14px 'Open Sans';
+				color: #2e2e2e;
+				text-decoration: none;
+				&:hover {
+					color: #12b980;
+				}
+			}
+		}
+	}
+	figure {
+		.lazy-load {
+			width: 100%;
+			min-height: 100px;
+		}
+	}
+}

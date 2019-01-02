@@ -1,0 +1,120 @@
+@import '../../../../sass/variables';
+
+.site-nav-mob {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    .site-nav-mob-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.2;
+        background-color: $lightgrey-color;
+    }
+    .site-nav-mob-inner{
+        max-width: 300px;
+        background-color: $lightgrey-color;
+        padding: 15px 0 0;
+        position: relative;
+        height: 100%;
+    }
+    .site-nav-mob-body{
+        padding-left: 30px;
+        padding-right: 30px;
+        position: absolute;
+        width: 100%;
+        top: 73px;
+        height: calc(100% - 73px);
+    }
+    .site-nav-mob-body{
+        overflow: auto; 
+    }
+    .site-nav-mob-header{
+        border-bottom: 1px solid #343535;
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        top: 15px;
+        .fallback-text {
+            overflow: hidden;
+            position: absolute;
+            height: 1px;
+            width: 1px;
+        }
+        .close-menu {
+            background: none;
+            color: white;
+            border: none;
+        }
+        .site-nav-mob-header__close{
+            padding: 15px 0;
+        }
+    }
+    .mobile-nav__link{
+        color: $main-text-color;
+        text-decoration: none;
+        font-weight: normal;
+        display: block;
+        padding: 15px 0;
+        font-size: $font-size-14;
+    }
+    .mobile-nav__item{
+        .mobile-nav__toggle {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+        .mobile-nav__sublist {
+            list-style: none;
+            padding-left: 0;
+        }
+        > .mobile-nav__link {
+            padding-left: 15px;
+        }
+    }
+    .mobile-nav__toggle {
+        .fallback-text {
+            overflow: hidden;
+            position: absolute;
+            height: 1px;
+            width: 1px;
+        }
+        button {
+            background: none;
+            border: none;
+            color: #ef3534;
+        }
+    }
+    .mobile-nav__has-sublist {
+        &.mobile-nav--expanded {
+            .mobile-nav__toggle-open {
+                display: none;
+            }
+            .mobile-nav__toggle-close {
+                display: block;
+            }
+        }
+        .mobile-nav__toggle-close{
+            display: none;
+        }
+    }
+    .mobile-nav__has-sublist, .mobile-nav__item {
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            right: 15px;
+            border-bottom: 1px solid #343535;
+        }
+    }
+    .main-nav {
+        font-size: $font-size-22;
+    }
+}

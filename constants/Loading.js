@@ -1,0 +1,1 @@
+export const LOADINNG_STATUS = '@@/LOADINNG_STATUS';

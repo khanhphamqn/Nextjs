@@ -1,0 +1,50 @@
+@import '../../../../sass/variables';
+
+footer{
+	padding: 19px 20px;
+	background: #ffffff;
+	overflow: hidden;
+}
+footer p {
+	font: 12px 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+	color: #2e2e2e;
+	float: left;
+	margin-bottom: 0;
+}
+footer a {
+	font: 12px 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+	color: #2e2e2e;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+footer a:hover {
+	color: #12b980;
+	text-decoration: none;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+footer em {
+	font-style: normal;
+}
+footer ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: right;
+}
+footer ul li {
+	overflow: hidden;
+	float: left;
+	margin-left: 18px;
+}
+footer ul li a {
+	font-size: $font-size-18;
+	color: #171717;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+footer ul li a:hover {
+	color: $main-bg-color;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
